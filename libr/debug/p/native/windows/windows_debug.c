@@ -791,7 +791,7 @@ static void print_exception_event(DEBUG_EVENT *de) {
 		(ut32)code, get_exception_name (code),
 		(int)de->dwThreadId);
 	if (is_fatal && de->u.Exception.dwFirstChance) {
-		eprintf ("Hint: Use 'dce' continue into exception handler\n");
+		eprintf ("Big hint: Use 'dce' continue into exception handler\n");
 	} else if (is_fatal) {
 		eprintf ("Second-chance exception!!!\n");
 	}
